@@ -1,0 +1,27 @@
+- React Select lib for drob down list
+
+
+
+// Todo: region drob down Filter
+-> region state in the App -> input value from drob down =>  filter with region 
+
+
+-> filteredCountries state -> update it and pass it to the regionMenu and do all your code in regionMenu
+
+
+
+// Todo: Search Input Filter
+
+the same but for input 
+-> filteredCountries state -> update it and pass it to the regionMenu and do all your code in regionMenu
+
+
+// Todo: Reset button for both input , menu
+-> Done -> by making them controlled elements
+
+
+// Todo: Router implementaion and pages 
+-> react router docs w3shcools
+-> create pages and routes
+
+

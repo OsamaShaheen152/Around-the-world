@@ -1,10 +1,17 @@
-import { Header } from "./components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Country, Home, Layout, NoPage } from "./pages/index";
 
 function App() {
   return (
-    <div className="dark:text-gray-100">
-      <Header />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path=":country" element={<Country />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 export default App;
