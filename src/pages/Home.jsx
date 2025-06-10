@@ -22,8 +22,11 @@ export function Home() {
     setSearchQuery(query);
   };
 
+  // Skip first 8 countries from the original data, then apply filters
+  const baseCountries = contriesList.slice(8);
+  
   // Filter countries based on both region and search query
-  const filteredCountries = contriesList.filter((country) => {
+  const filteredCountries = baseCountries.filter((country) => {
     const matchesRegion = selectedRegion
       ? country.region === selectedRegion
       : true;
