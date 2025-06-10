@@ -33,6 +33,7 @@ export function Home() {
 
     return matchesQuery && matchesRegion;
   });
+
   return (
     <div>
       {isError && <ShowMessage message={"Something went wrong!"} />}

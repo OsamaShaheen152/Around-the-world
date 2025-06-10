@@ -75,7 +75,7 @@ export function EmptySearch() {
         />
       </svg>
 
-      <h2 className="text-4xl font-bold">No results found</h2>
+      <h2 className="text-4xl font-bold">No result found</h2>
       <p className="font-light">
         We can’t find the country you searched for...
       </p>

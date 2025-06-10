@@ -93,13 +93,13 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dHawu9wA_jkm23mFmNaJ-21" value="result found?" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;rounded=1;arcSize=0;" parent="1" vertex="1">
+        <mxCell id="dHawu9wA_jkm23mFmNaJ-21" value="contriesList found?" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;rounded=1;arcSize=0;" parent="1" vertex="1">
           <mxGeometry x="16.75" y="1049" width="124.5" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="dHawu9wA_jkm23mFmNaJ-23" value="Show &lt;br&gt;&quot;No result found&quot; message" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;arcSize=0;" parent="1" vertex="1">
+        <mxCell id="dHawu9wA_jkm23mFmNaJ-23" value="Show &lt;br&gt;&quot;No contriesList found&quot; message" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;arcSize=0;" parent="1" vertex="1">
           <mxGeometry x="-168" y="1071.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="dHawu9wA_jkm23mFmNaJ-25" value="Render results list" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;arcSize=0;" parent="1" vertex="1">
+        <mxCell id="dHawu9wA_jkm23mFmNaJ-25" value="Render contriesLists list" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;arcSize=0;" parent="1" vertex="1">
           <mxGeometry x="19" y="1226" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="dHawu9wA_jkm23mFmNaJ-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="dHawu9wA_jkm23mFmNaJ-17" target="dHawu9wA_jkm23mFmNaJ-21" edge="1">
