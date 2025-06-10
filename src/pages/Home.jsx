@@ -14,7 +14,6 @@ export function Home() {
 
   const { contriesList, isLoading, isError } = useFetchData();
 
-  // Todo:  Filter By Region
   const handleSelectedRegion = (region) => {
     setSelectedRegion(region);
   };
@@ -23,15 +22,24 @@ export function Home() {
     setSearchQuery(query);
   };
 
+<<<<<<< HEAD
   const baseCountries = contriesList.slice(8);
 
   const filteredCountriesRegion = baseCountries.filter((country) => {
+=======
+  // Skip first 8 countries from the original data, then apply filters
+  const baseCountries = contriesList.slice(8);
+  
+  // Filter countries based on both region and search query
+  const filteredCountries = baseCountries.filter((country) => {
+>>>>>>> 1523c0ee8a72dbeb90a251e90bc02cc3134ad9ac
     const matchesRegion = selectedRegion
       ? country.region === selectedRegion
       : true;
-    const matchesQuery = country.name.common
-      .toLowerCase()
-      .includes(searchQuery.toLowerCase());
+    
+    const matchesQuery = searchQuery
+      ? country.name.common.toLowerCase().includes(searchQuery.toLowerCase())
+      : true;
 
     return matchesQuery && matchesRegion;
   });
@@ -64,7 +72,7 @@ export function Home() {
             </div>
           </div>
 
-          <CountryList data={filteredCountriesRegion} />
+          <CountryList data={filteredCountries} />
         </>
       )}
     </div>

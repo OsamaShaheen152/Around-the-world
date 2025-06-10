@@ -1,4 +1,5 @@
 import { CountryCard, EmptySearch } from "./index";
+
 export function CountryList({ data }) {
   return (
     <div className="container mx-auto">

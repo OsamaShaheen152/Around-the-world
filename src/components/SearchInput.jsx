@@ -1,6 +1,7 @@
 export function SearchInput({ onQueryChange, searchQuery }) {
   const handleQueryChange = (e) => {
     const query = e.target.value;
+<<<<<<< HEAD
     console.log(query);
     onQueryChange(query.trim());
   };
@@ -8,6 +9,14 @@ export function SearchInput({ onQueryChange, searchQuery }) {
   return (
     <form className="relative flex-1 items-center">
       <div className="absolute left-8 top-4 md:top-5">
+=======
+    onQueryChange(query);
+  };
+
+  return (
+    <form className="relative flex-1" onSubmit={(e) => e.preventDefault()}>
+      <div className="absolute left-8 top-5">
+>>>>>>> 1523c0ee8a72dbeb90a251e90bc02cc3134ad9ac
         <svg
           width="18"
           height="18"
@@ -31,8 +40,8 @@ export function SearchInput({ onQueryChange, searchQuery }) {
         value={searchQuery}
         name="search"
         onChange={handleQueryChange}
-        className="h-12 w-full max-w-md rounded-full pl-20 shadow outline-none dark:bg-gray-800 md:h-14"
-        placeholder="Search..."
+        className="h-12 w-full max-w-md rounded-full pl-20 shadow outline-none dark:bg-gray-800 dark:text-white md:h-14"
+        placeholder="Search for a country..."
       />
     </form>
   );
