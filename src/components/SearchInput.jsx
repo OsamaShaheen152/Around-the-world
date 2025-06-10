@@ -2,12 +2,12 @@ export function SearchInput({ onQueryChange, searchQuery }) {
   const handleQueryChange = (e) => {
     const query = e.target.value;
     console.log(query);
-    onQueryChange(query);
+    onQueryChange(query.trim());
   };
 
   return (
-    <form className="relative flex-1">
-      <div className="absolute left-8 top-5">
+    <form className="relative flex-1 items-center">
+      <div className="absolute left-8 top-4 md:top-5">
         <svg
           width="18"
           height="18"

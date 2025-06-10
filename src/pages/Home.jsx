@@ -23,7 +23,9 @@ export function Home() {
     setSearchQuery(query);
   };
 
-  const filteredCountriesRegion = contriesList.filter((country) => {
+  const baseCountries = contriesList.slice(8);
+
+  const filteredCountriesRegion = baseCountries.filter((country) => {
     const matchesRegion = selectedRegion
       ? country.region === selectedRegion
       : true;
@@ -42,7 +44,7 @@ export function Home() {
       {!isLoading && !isError && (
         <>
           <div className="container mx-auto">
-            <div className="flex flex-col items-center justify-between lg:flex-row">
+            <div className="flex flex-col items-center lg:flex-row lg:justify-between">
               <div className="mb-5 flex items-center gap-2">
                 <SearchInput
                   onQueryChange={handleSearchQuery}
@@ -53,7 +55,7 @@ export function Home() {
                   setSelectedRegion={setSelectedRegion}
                 />
               </div>
-              <div className="ml-[-150px]">
+              <div className="min-[360px]:ml-[-100px]">
                 <RegionMenu
                   onRegionChange={handleSelectedRegion}
                   selectedRegion={selectedRegion}
